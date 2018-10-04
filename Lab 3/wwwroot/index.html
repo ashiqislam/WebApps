@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="formCalc.js"></script>
+    <script src="moment.js"></script>
+</head>
+<body>
+    <h1 class="ml-4">Beverage Order</h1>
+    <form class="ml-4">
+        <div class="row ml-2 mb-3 mt-3">
+            Customer Name:
+            <input id="name" class="ml-2" type="text" size="20" />
+        </div>
+        <div class="row ml-2">
+            <div id="beveragetype">
+                Beverage:
+                <select id="dropdown" class="ml-2 mt-1">
+                    <option value="0">Coffee</option>
+                    <option value="1">Tea</option>
+                    <option value="2">Beer</option>
+                    <option value="3">Wine</option>
+                </select>
+            </div>
+            <div class="ml-3 mt-1" id="size">
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="drinkSize" value="0" /> Small
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="drinkSize" value="1" checked /> Medium
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="drinkSize" value="2" /> Large
+                </div>
+            </div>
+            <div class="ml-4" id="quantity">
+                Quantity:
+                <input type="number" id="amount" class="ml-2" min="1" value="1" />
+            </div>
+        </div>
+        <div id="bDay" class="ml-2">
+            Birthdate:
+            <input class="ml-2 mt-3" id="date" type="date" />
+        </div>
+        <div class="row ml-2 mt-3">
+            <input type="button" id="btn" value="Submit Order" class="btn btn-success" />
+        </div>
+    </form>
+    <div class="row">
+        <div id="receipt" class="container border border-dark p-1 w-50">
+            <div class="row">
+                <h5 id="output1" class="container text-center"></h5>
+            </div>
+            <div class="row">
+                <span id="output2" class="container text-center"></span>
+            </div>
+            <div class="row">
+                <span id="output3" class="container text-center"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

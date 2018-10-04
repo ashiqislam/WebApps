@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Content Remove="wwwroot\JavaScript.js" />
+    <Content Remove="wwwroot\lab3.js" />
   </ItemGroup>
 
   <ItemGroup>
