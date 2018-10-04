@@ -7,6 +7,7 @@
         dateDisplay.style.visibility = "hidden";
     }
 }
+
 var ageCalc = function () {
     var date = document.querySelector("#date").value;
     var bDay = moment(date);
@@ -22,18 +23,22 @@ var ageCalc = function () {
         return true;
     }
 }
+
 var prices = [
     [2.5, 4, 5],
     [2.5, 5.5, 7.5],
     [4, 7, 8],
     [6, 8, 9]
 ];
+
 var beverages = ["Coffee", "Tea", "Beer", "Wine"];
+
 var sizes = {
     0: "Small",
     1: "Medium",
     2: "Large"
 };
+
 var printReceipt = function () {
     var name = document.querySelector("#name").value;
     var drink = document.querySelector("select option:checked").value;
@@ -50,6 +55,7 @@ var printReceipt = function () {
         document.querySelector("#receipt").style.background = 'white';
     }
 }
+
 window.onload = function () {
     document.querySelector("#bDay").style.visibility = "hidden";
     document.querySelector("#receipt").style.visibility = "hidden";
