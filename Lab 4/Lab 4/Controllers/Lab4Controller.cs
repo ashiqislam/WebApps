@@ -34,6 +34,5 @@ namespace Lab_4.Controllers
 
             return View(date);
         }
-
     }
 }
