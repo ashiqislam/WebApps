@@ -1,0 +1,13 @@
+﻿@model System.DateTime
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="well well-md bg-primary" style="background-color:dodgerblue">@ViewBag.Greeting</h1>
+
+<h2 class="font-weight-bold">It is now @Model.ToShortTimeString() on @Model.ToLongDateString()</h2>
+
+<h4 class="font-weight-bold">There are @ViewBag.DaysLeft more days in @Model.Year</h4>
+
+
