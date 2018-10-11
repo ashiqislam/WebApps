@@ -31,7 +31,6 @@ namespace Lab_4.Controllers
             {
                 ViewBag.Greeting = "Good Evening";
             }
-
             return View(date);
         }
     }
