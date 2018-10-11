@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc;
+using WaffleGenerator;
 
 namespace Lab_4.Controllers
 {
     public class Lab4Controller : Controller
     {
+        private static List<HtmlString> products = new List<HtmlString>();
+
         public IActionResult Index()
         {
-       
+
             DateTime date = DateTime.Now;
             DateTime endDate = new DateTime(2019, 1, 1);
             TimeSpan span = endDate.Subtract(date);
@@ -31,7 +35,20 @@ namespace Lab_4.Controllers
             {
                 ViewBag.Greeting = "Good Evening";
             }
+
             return View(date);
         }
+
+
+        public IActionResult Waffler(int id)
+        {
+
+            var waffle = WaffleEngine.Html(2, true, false);
+
+            ViewBag.Waffle = new HtmlString(waffle);
+
+            return View(new HtmlString(waffle));
+        }
+
     }
 }

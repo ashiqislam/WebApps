@@ -1,0 +1,22 @@
+﻿@model Microsoft.AspNetCore.Html.HtmlString;
+
+@{
+    ViewData["Title"] = "Waffler";
+}
+
+<h2 class="bg-primary text-white" style="border-radius:7px;padding:7px">Generate Waffles</h2>
+
+<a href="/Lab4/Waffler/1" class="form-inline btn btn-success">1</a>
+<a href="/Lab4/Waffler/2" class="form-inline btn btn-success">2</a>
+<a href="/Lab4/Waffler/3" class="form-inline btn btn-success">3</a>
+<a href="/Lab4/Waffler/4" class="form-inline btn btn-success">4</a>
+<a href="/Lab4/Waffler/5" class="form-inline btn btn-success">5</a>
+
+
+<div class ="well" style="border-color:blue;background-color:rgb(228, 245, 252);font-size:small; margin-top:10px;margin-bottom:10px">
+    @ViewBag.Waffle
+</div>
+
+
+
+

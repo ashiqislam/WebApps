@@ -4,10 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 class="well well-md bg-primary" style="background-color:dodgerblue">@ViewBag.Greeting</h1>
+<h1 class="bg-primary text-white" style="border-radius:7px;padding:15px">@ViewBag.Greeting</h1>
 
 <h2 class="font-weight-bold">It is now @Model.ToShortTimeString() on @Model.ToLongDateString()</h2>
 
 <h4 class="font-weight-bold">There are @ViewBag.DaysLeft more days in @Model.Year</h4>
+
+<a href="Lab4/Waffler" class="btn btn-success">Generate Waffles</a>
 
 
