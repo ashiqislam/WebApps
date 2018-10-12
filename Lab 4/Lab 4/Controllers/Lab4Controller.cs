@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc;
 using WaffleGenerator;
+using Microsoft.AspNetCore.Html;
 
 namespace Lab_4.Controllers
 {
     public class Lab4Controller : Controller
     {
-        private static List<HtmlString> products = new List<HtmlString>();
+        private static List<HtmlString> waffles = new List<HtmlString>();
 
         public IActionResult Index()
         {
@@ -42,12 +42,16 @@ namespace Lab_4.Controllers
 
         public IActionResult Waffler(int id)
         {
+            waffles.Clear();
 
-            var waffle = WaffleEngine.Html(2, true, false);
+            for (int i = 0; i < id; i++)
+            {
+                var waffle = WaffleEngine.Html(2, true, false);
+                ViewBag.Waffle = new HtmlString(waffle);
+                waffles.Add(ViewBag.Waffle);
+            }
 
-            ViewBag.Waffle = new HtmlString(waffle);
-
-            return View(new HtmlString(waffle));
+            return View(waffles);
         }
 
     }
