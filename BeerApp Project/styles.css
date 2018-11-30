@@ -1,0 +1,23 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+	#img2 {
+		display: none;
+	}
+
+@media only screen and (max-width: 600px) {
+    img {
+        display: none;
+    }
+	
+	#img2 {
+		display: block;
+	}
+		
+}
+
+.btn-danger{
+	background-color: #FA0000 !important;
+}

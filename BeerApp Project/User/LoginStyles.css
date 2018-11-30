@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+   background: url('drinks.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  height: 100vh;
+}
+
+	.btn-xlarge {
+    font-size: 18px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+	}
+
+#grad1 {
+    background: linear-gradient(to right, red, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#login .formheader{
+		font-family: "Times New Roman", Times, serif;
+		font-size: xx-large;
+}
+
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: black;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+#logo {
+ display: block;
+ margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #logo {
+	display: none;
+    }
+		
+}
