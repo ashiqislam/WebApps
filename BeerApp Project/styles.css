@@ -8,6 +8,12 @@ img {
 	}
 
 @media only screen and (max-width: 600px) {
+	
+	.btn {
+		font-size: 10px;
+	}
+	
+	
     img {
         display: none;
     }
@@ -19,5 +25,5 @@ img {
 }
 
 .btn-danger{
-	background-color: #FA0000 !important;
+	background-color: #FA0000 !important; //Bootstrap override
 }

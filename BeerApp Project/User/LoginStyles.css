@@ -29,6 +29,10 @@ body {
 		font-size: xx-large;
 }
 
+.text-danger {
+	color: #f44242 !important;
+}
+
 
 #login .container #login-row #login-column #login-box {
   margin-top: 120px;
